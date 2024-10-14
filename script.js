@@ -26,13 +26,9 @@ function getHumanChoice() {
 return humanChoice;
 }
 
-function playRound() {
-    console.log("Essas são as escolhas do round: ");
+function playRound() {;
     const computerChoice = getComputerChoice();
     const humanChoice = getHumanChoice();
-    
-    console.log("Escolha computador " + computerChoice);
-    console.log("Escolha humano " + humanChoice);
 
     if (humanChoice === "rock" && computerChoice === "scissors") {
         console.log("You win! Rock beats Scissors");
@@ -78,13 +74,18 @@ function playRound() {
 }
 
 function playGame() {
-    for (round = 0; i = 5; round++);
-    playRound();
+    for (round = 0; round < 5; round++) {
+        playRound();
+    }
 }
 
 function winner() {
     if (humanScore > computerScore) {
         console.log("You win! " + humanScore + "x" + computerScore);
+    }
+    
+    else if (humanScore === computerScore) {
+        console.log("It's a tie!");
     }
 
     else {
@@ -97,6 +98,4 @@ function winner() {
 let humanScore = 0;
 let computerScore = 0;
 playGame();
-console.log(humanScore);
-console.log(computerScore);
 winner();
