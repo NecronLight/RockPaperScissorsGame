@@ -1,0 +1,24 @@
+#rockBtn {
+    height: 200px;
+    width: 200px;
+}
+
+#paperBtn {
+    height: 200px;
+    width: 200px;
+}
+
+#scissorsBtn {
+    height: 200px;
+    width: 200px;
+}
+
+#results {
+    background-color:palegreen;
+    height: auto;
+    width: auto;
+}
+
+#board {
+    background-color:wheat;
+}
